@@ -278,7 +278,7 @@ export default function SolarJourney(){
   function drawEnhancedSun(ctx:CanvasRenderingContext2D,t:number,ap:number){
     const sR=36,sunX=0,sunY=0;
     const isActive=ap===0;
-    const scale=isActive?1:1;
+    // const scale=isActive?1:1;
 
     // distant glow halo (huge)
     const halo=ctx.createRadialGradient(sunX,sunY,sR*2,sunX,sunY,sR*12);

@@ -486,7 +486,7 @@ export default function ISSSection() {
             </div>
             <h2 className="font-orbitron font-black text-white leading-tight mb-3"
               style={{ fontSize: "clamp(1.8rem,4.5vw,3.2rem)", textShadow: "0 0 30px rgba(0,245,255,0.2)" }}>
-              HUMANITY'S<br />
+              it&apos;s<br />
               <span style={{ color: "#00f5ff", textShadow: "0 0 25px rgba(0,245,255,0.5)" }}>OUTPOST</span><br />
               IN ORBIT
             </h2>

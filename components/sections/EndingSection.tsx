@@ -11,7 +11,7 @@ export default function EndingSection() {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d")!;
-    let t = 0;
+    // let t = 0;
     const resize = () => { canvas.width=canvas.offsetWidth||window.innerWidth; canvas.height=canvas.offsetHeight||window.innerHeight; };
     resize();
     const stars = Array.from({length:500},()=>{const a=Math.random()*Math.PI*2;return{angle:a,dist:0.02+Math.random()*0.98,speed:0.003+Math.random()*0.006,brightness:0.4+Math.random()*0.6};});
@@ -38,7 +38,7 @@ export default function EndingSection() {
         ng.addColorStop(0,`rgba(${n.r},${n.g},${n.b},0.07)`);ng.addColorStop(1,"rgba(0,0,0,0)");
         ctx.fillStyle=ng;ctx.fillRect(0,0,W,H);
       });
-      t+=0.01;rafRef.current=requestAnimationFrame(draw);
+      rafRef.current=requestAnimationFrame(draw);
     };
     draw();
     window.addEventListener("resize",resize);
@@ -63,7 +63,7 @@ export default function EndingSection() {
           <span className="block mt-3" style={{color:"#00f5ff",textShadow:"0 0 40px rgba(0,245,255,0.5)"}}>SO IS HUMAN CURIOSITY.</span>
         </h2>
         <p className="font-exo text-white/30 mt-6 text-base leading-relaxed max-w-xl mx-auto">
-          From the scorching surface of Mercury to the frozen darkness of Neptune, from the Moon's dust to the ISS orbiting above — humanity has always reached for the stars. And we are just beginning.
+          From the scorching surface of Mercury to the frozen darkness of Neptune, from the Moon&apos;s dust to the ISS orbiting above — humanity has always reached for the stars. And we are just beginning.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
           <button className="mag-btn border border-cyan-400 text-cyan-400 font-orbitron text-sm tracking-[0.15em] uppercase px-8 py-3"
