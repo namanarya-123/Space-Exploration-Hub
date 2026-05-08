@@ -236,7 +236,7 @@ export default function ChandrayaanSection() {
           <div style={{position:"absolute",top:8,left:8,zIndex:3,fontFamily:"monospace",fontSize:9,color:"rgba(255,152,0,0.7)",letterSpacing:"0.2em"}}>▶ ISRO · LIVE FEED</div>
           <div style={{position:"relative",paddingTop:"56.25%"}}>
             <iframe
-              src="https://www.youtube.com/embed/L4mFSb8ELYM?autoplay=0&rel=0&modestbranding=1&cc_load_policy=0&controls=1"
+              src="https://www.youtube.com/embed/9cYPtTuk5MQ?autoplay=1&mute=1&rel=0"
               title="Chandrayaan-3 Launch | ISRO"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
