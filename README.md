@@ -1,138 +1,86 @@
-# SPACE EXPLORATION HUB — The Cinematic Space Journey
+SPACE EXPLORATION HUB 🚀
 
-> A cinematic, award-quality space exploration web experience built with Next.js 15, Three.js, GSAP, and Framer Motion.
+A cinematic space exploration experience built with Next.js, Three.js, GSAP, and Framer Motion.
+This project was created to feel less like a normal website and more like an interactive journey through space — from exploring planets and black holes to traveling through wormholes and futuristic civilizations.
 
-## ✨ Features
+The main focus of the project was creating immersive visuals, smooth animations, and a storytelling experience that feels alive while scrolling.
 
-- **Cinematic Preloader** — Holographic boot sequence with terminal logs, pulse rings, and particle effects
-- **Deep Space Hero** — Animated starfield with twinkling stars, nebula clouds, and parallax depth
-- **Interactive Solar System** — All 7 planets with procedural shaders, atmospheres, moons, rings, and live stats
-- **Mars Colony** — Animated dust storms, colony domes, rover traversal, and god rays
-- **Black Hole** — Gravitational lensing simulation, accretion disk, relativistic jets, event horizon
-- **Wormhole Transit** — Light streak tunnel with scroll-driven warp acceleration
-- **Future Civilization** — Orbital megastructures, AI network nodes, flying ships, neon skyline
-- **Hyperspace Ending** — Scroll-driven star warp with cosmic energy burst
+✨ What’s Inside
+Interactive solar system with animated planets
+Deep space landing section with cinematic transitions
+Mars colony environment with moving rover and dust effects
+Black hole simulation with glowing accretion visuals
+Wormhole travel sequence with warp-speed animation
+Futuristic civilization scene with neon-style atmosphere
+Smooth scrolling and cinematic motion throughout the website
+Custom HUD, animated cursor, and sci-fi inspired UI
 
-## 🛠 Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| Next.js 15 App Router | Framework & routing |
-| TypeScript | Type safety |
-| TailwindCSS | Utility-first styling |
-| GSAP + ScrollTrigger | Cinematic scroll animations |
-| Framer Motion | Component-level animations |
-| Lenis | Buttery smooth scrolling |
-| Canvas 2D API | Planet & scene rendering |
-| WebGL / GLSL Shaders | Advanced visual effects |
+🛠 Tech Stack
+Next.js 15
+TypeScript
+Tailwind CSS
+GSAP + ScrollTrigger
+Framer Motion
+Lenis
+Canvas API
+WebGL / GLSL Shaders
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone or unzip the project
-cd beyond-humanity
-
-# Install dependencies
+🚀 Running the Project
+1. Clone the repository
+git clone <your-repo-link>
+2. Go to the project folder
+cd space-exploration-hub
+3. Install dependencies
 npm install
-
-# Start development server
+4. Start the development server
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) to experience it.
 
-### Production Build
+Open http://localhost:3000 in your browser.
 
-```bash
-npm run build
-npm start
-```
+📁 Project Structure
+app/                # Main app router pages
+components/         # UI and section components
+components/canvas/  # Canvas based visual effects
+components/sections/# Main cinematic sections
+hooks/              # Custom React hooks
+lib/                # Utilities and planet data
+shaders/            # GLSL shaders
+styles/             # Global styles and animations
+🎨 Design Inspiration
 
-## 📁 Project Structure
+The project takes inspiration from:
 
-```
-beyond-humanity/
-├── app/
-│   ├── layout.tsx          # Root layout, fonts, metadata
-│   └── page.tsx            # Main page, section orchestration
-├── components/
-│   ├── canvas/
-│   │   ├── StarField.tsx   # Animated starfield background
-│   │   └── PlanetCanvas.tsx # Procedural planet renderer
-│   ├── layout/
-│   │   ├── HUD.tsx         # Cinematic HUD overlay
-│   │   └── SmoothScroll.tsx # Lenis smooth scroll wrapper
-│   ├── sections/
-│   │   ├── HeroSection.tsx       # Deep space intro
-│   │   ├── SolarSystemSection.tsx # Interactive planet explorer
-│   │   ├── MarsSection.tsx       # Mars colonization
-│   │   ├── BlackHoleSection.tsx  # Event horizon simulation
-│   │   ├── WormholeSection.tsx   # Wormhole transit
-│   │   ├── FutureSection.tsx     # Interstellar civilization
-│   │   └── EndingSection.tsx     # Hyperspace finale
-│   └── ui/
-│       ├── CustomCursor.tsx  # Glowing cursor
-│       ├── Preloader.tsx     # Cinematic boot sequence
-│       └── Scanlines.tsx     # CRT scanline overlay
-├── hooks/
-│   ├── useScrollProgress.ts  # Scroll tracking hooks
-│   └── useMagneticButton.ts  # Magnetic button interaction
-├── lib/
-│   ├── planets.ts  # Planet data & types
-│   └── utils.ts    # Utility functions
-├── shaders/
-│   ├── planet.vert  # Planet vertex shader
-│   ├── planet.frag  # Planet fragment shader (atmosphere, lighting)
-│   └── blackhole.frag # Gravitational lensing shader
-├── styles/
-│   └── globals.css  # Design system, animations, custom properties
-├── next.config.mjs
-├── tailwind.config.ts
-└── tsconfig.json
-```
+Interstellar
+NASA visual archives
+Sci-fi HUD interfaces
+Space documentaries
+Futuristic cinematic websites
 
-## 🎨 Design System
+The goal was to create a visually rich experience while keeping interactions smooth and responsive.
 
-### Colors
-```css
---cyan: #00f5ff
---blue: #0066ff
---purple: #8b00ff
---red: #ff2244
---gold: #ffd700
-```
+⚡ Performance Optimizations
+Dynamic imports for heavy sections
+Optimized canvas rendering
+Smooth scrolling using Lenis
+Proper animation cleanup
+Lightweight rendering wherever possible
+🔧 Customization
 
-### Fonts
-- **Orbitron** — Headings, HUD elements, cinematic titles
-- **Exo 2** — Body text, descriptions
-- **Share Tech Mono** — Terminal text, data readouts, labels
+You can easily:
 
-## ⚡ Performance Notes
+Add new planets
+Change colors and themes
+Modify animations
+Add new cinematic sections
+Extend shaders and visual effects
 
-- Dynamic imports with `next/dynamic` for all 3D sections
-- `Suspense` boundaries with fallback states
-- Canvas-based rendering instead of heavy 3D libraries where possible
-- `requestAnimationFrame` with proper cleanup
-- Passive scroll event listeners
-- Optimized resize handlers
+Most configurations are modular and easy to update.
 
-## 🔧 Customization
 
-### Adding a new planet
-Edit `lib/planets.ts` and add a new entry to the `PLANETS` array.
+Made with ❤️ by Shivnandan & Naman
 
-### Modifying colors
-Update CSS custom properties in `styles/globals.css` or Tailwind config.
 
-### Adjusting animations
-GSAP timelines are in each section component. Scroll triggers use standard `ScrollTrigger` API.
-
-## 📄 License
-
-MIT — Build something beyond humanity.
+Feel free to use this project for learning, inspiration, or building your own creative experiences.
