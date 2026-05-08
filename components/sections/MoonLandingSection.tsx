@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const APOLLO_MISSIONS = [
@@ -87,7 +88,7 @@ export default function MoonLandingSection() {
         const sx = Math.random() * W * 0.7 + W * 0.15;
         shooters.push({ x: sx, y: H * 0.04 + Math.random() * H * 0.2, vx: 4 + Math.random() * 3, vy: 1 + Math.random(), len: 40 + Math.random() * 50, alpha: 1, life: 0 });
       }
-      shooters.forEach((s, si) => {
+      shooters.forEach((s) => {
         s.x += s.vx; s.y += s.vy; s.life++;
         const fadeAlpha = s.alpha * (1 - s.life / 50);
         if (fadeAlpha > 0) {
@@ -544,10 +545,11 @@ export default function MoonLandingSection() {
                   NASA · AS08-14-2383
                 </div>
                 <div className="absolute inset-0">
-  <img
+  <Image
     src="https://cdn.britannica.com/99/157599-050-743F6CAC/Neil-Armstrong-Moon-July-1969.jpg"
     alt="Neil Armstrong on the Moon"
-    className="w-full h-full object-cover"
+    fill
+    className="object-cover"
   />
 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
@@ -563,8 +565,8 @@ export default function MoonLandingSection() {
             className="space-y-3">
             <p className="font-exo text-white/35 text-sm leading-relaxed text-center mb-4">
               Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon.
-              Michael Collins orbited above in the Command Module. "That's one small step for man,
-              one giant leap for mankind."
+              Michael Collins orbited above in the Command Module. &quot;That&apos;s one small step for man,
+              one giant leap for mankind.&quot;
             </p>
             <div className="grid grid-cols-2 gap-2">
               {[
@@ -583,7 +585,7 @@ export default function MoonLandingSection() {
             {/* Quote */}
             <div className="border-l-2 border-amber-400/30 pl-4 py-2 mt-4">
               <p className="font-exo text-white/38 text-sm italic leading-relaxed">
-                "One small step for man, one giant leap for mankind."
+                &quot;One small step for man, one giant leap for mankind.&quot;
               </p>
               <p className="font-mono text-[9px] text-amber-400/50 tracking-widest uppercase mt-2">
                 — Neil Armstrong · July 20, 1969

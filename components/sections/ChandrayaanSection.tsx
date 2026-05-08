@@ -42,9 +42,6 @@ export default function ChandrayaanSection() {
     };
     resize();
 
-    // Trajectory particles
-    const trajParticles: { x: number; y: number; life: number; vx: number; vy: number }[] = [];
-
     const draw = () => {
       const W = canvas.width, H = canvas.height;
       ctx.clearRect(0, 0, W, H);
@@ -270,7 +267,7 @@ export default function ChandrayaanSection() {
           viewport={{ once: true }} transition={{ duration: 0.9 }}>
           <div className="font-mono text-[11px] tracking-[0.3em] uppercase mb-3"
             style={{ color: "rgba(255,152,0,0.6)" }}>
-            ◈ INDIA'S LUNAR PROGRAMME · ISRO
+              ◈ INDIA&apos;S LUNAR PROGRAMME · ISRO
           </div>
           <h2 className="font-orbitron font-black text-white leading-tight mb-3"
             style={{ fontSize: "clamp(2rem,5vw,3.8rem)" }}>

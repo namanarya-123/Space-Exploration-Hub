@@ -6,7 +6,8 @@ export default function EndingSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const rafRef = useRef<number>(0);
   const progressRef = useRef(0);
-
+  const tRef = useRef(0);
+  
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -38,7 +39,7 @@ export default function EndingSection() {
         ng.addColorStop(0,`rgba(${n.r},${n.g},${n.b},0.07)`);ng.addColorStop(1,"rgba(0,0,0,0)");
         ctx.fillStyle=ng;ctx.fillRect(0,0,W,H);
       });
-      t+=0.01;rafRef.current=requestAnimationFrame(draw);
+      tRef.current+=0.01;rafRef.current=requestAnimationFrame(draw);
     };
     draw();
     window.addEventListener("resize",resize);
