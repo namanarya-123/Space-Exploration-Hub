@@ -1,5 +1,19 @@
 SPACE EXPLORATION HUB 🚀
 
+## 🚀 Team Abhimanyu
+
+The minds behind this cinematic space journey.
+
+### 👨‍💻 Developers
+- **Naman Kumar Patwari**
+- **Shivnandan Pandit**
+
+### 🎓 Academic Background
+B.Tech – Computer Science & Engineering  
+3rd Year Students
+
+
+###
 A cinematic space exploration experience built with Next.js, Three.js, GSAP, and Framer Motion.
 This project was created to feel less like a normal website and more like an interactive journey through space — from exploring planets and black holes to traveling through wormholes and futuristic civilizations.
 
